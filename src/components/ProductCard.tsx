@@ -80,19 +80,9 @@ const ProductCard = ({
         </div>
 
         {/* Name */}
-        <h3 className="font-display text-lg text-foreground mb-2 group-hover:text-primary transition-colors">
+        <h3 className="font-display text-lg text-foreground group-hover:text-primary transition-colors">
           {name}
         </h3>
-
-        {/* Price */}
-        <div className="flex items-center gap-2">
-          <span className="font-display text-xl text-primary">${price}</span>
-          {originalPrice && (
-            <span className="text-sm text-muted-foreground line-through">
-              ${originalPrice}
-            </span>
-          )}
-        </div>
       </div>
     </motion.div>
   );
