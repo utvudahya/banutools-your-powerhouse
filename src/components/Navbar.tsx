@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, ShoppingCart, Search, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logo from "@/assets/logo.jpg";
 
 const navLinks = [
   { name: "Products", href: "#products" },
@@ -18,13 +19,8 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <a href="/" className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-gradient-primary rounded-sm flex items-center justify-center">
-              <span className="font-display text-xl text-primary-foreground">B</span>
-            </div>
-            <span className="font-display text-2xl text-foreground tracking-wider">
-              BANU<span className="text-primary">TOOLS</span>
-            </span>
+          <a href="/" className="flex items-center">
+            <img src={logo} alt="BANU TOOLS" className="h-10 md:h-12 w-auto" />
           </a>
 
           {/* Desktop Navigation */}
