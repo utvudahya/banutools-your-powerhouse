@@ -1,4 +1,5 @@
 import { Facebook, Twitter, Instagram, Youtube, Mail, Phone, MapPin } from "lucide-react";
+import logo from "@/assets/logo.jpg";
 
 const Footer = () => {
   return (
@@ -7,13 +8,8 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
           {/* Brand */}
           <div>
-            <a href="/" className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 bg-gradient-primary rounded-sm flex items-center justify-center">
-                <span className="font-display text-xl text-primary-foreground">B</span>
-              </div>
-              <span className="font-display text-2xl text-foreground tracking-wider">
-                BANU<span className="text-primary">TOOLS</span>
-              </span>
+            <a href="/" className="flex items-center mb-4">
+              <img src={logo} alt="BANU TOOLS" className="h-10 w-auto" />
             </a>
             <p className="font-body text-muted-foreground mb-6">
               Premium power tools engineered for professionals. Building the future, one tool at a time.
@@ -68,7 +64,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-primary flex-shrink-0" />
-                <a href="tel:1-800-TOOLS" className="font-body text-muted-foreground hover:text-primary transition-colors">1-800-TOOLS</a>
+                <a href="tel:+919443242102" className="font-body text-muted-foreground hover:text-primary transition-colors">+91 94432 42102</a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-primary flex-shrink-0" />
